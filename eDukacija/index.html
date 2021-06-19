@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eDukacija</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section class="header">
+        <section id="header">
+        <nav>
+            <a href="index.html"><img src="slike/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#Product">PRODUCT</a></li>
+                    <li><a href="#Team">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+
+        </nav>
+    <div class="text-box">
+        <h1>Edukacija nikada nije bila lakša</h1>
+        <p><b>eDukacija je prva Peer to Peer platforma gdje učenici imaju priliku da potraže instruktora iz nekog određenog područja,<br>
+            dok instruktori imaju priliku da svoje usluge iz raznih područja nude na ovoj platformi.</b></p>
+        <a href="" class="hero-btn">Saznaj više o nama</a>
+    </div>
+        </section>
+    </section>
+
+
+    <section class="Product">
+        <section id="Product">
+        <h1>Šta je eDukacija?</h1>
+        <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b></p>
+
+        <div class="row">
+            <div class="product-column">
+                <h3>Učenici</h3>
+                <p><b>Učenici će potraživati instruktore koji odgovaraju njihovim poljima koje oni uče</b></p>
+            </div>
+
+            <div class="product-column">
+                <h3>Instruktori</h3>
+                <p><b>Instruktori će nuditi svoje usluge na ovoj platformi gdje će biti istaknuta njihova znanja koja poučavaju</b></p>
+            </div>
+
+            <div class="product-column">
+                <h3>Peer to Peer</h3>
+                <p><b>Ova platforma je Peer to Peer, što znači da vršnjaci poučavaju vršnjake, te ne postoji nikakvo dobno ograničenje ni za učenike, ni za instruktore</b></p>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <section class="Team">
+        <section id="Team">
+        <h1>Team koji stoji iza eDukacije</h1>
+
+        <div class="row">
+            <div class="team-column">
+                <img src="slike/Sanin.jpg">
+                <div class="layer">
+                    <h3>SANIN BAŠIĆ</h3>
+                </div>
+            </div>
+            <div class="team-column">
+                <img src="slike/Hana.jpg">
+                <div class="layer">
+                    <h3>HANA KUNIĆ</h3>
+                </div>
+            </div>
+            <div class="team-column">
+                <img src="slike/Ajdin.jpg">
+                <div class="layer">
+                    <h3>AJDIN SALIHOVIĆ</h3>
+                </div>
+            </div>
+        </div>
+         </section>
+    </section>
+
+    <section class="contact">
+         <section id="contact">
+        <h1>Uvijek smo dostupni da odgovorimo na sva vaša pitanja</h1>
+        <a href="" class="dugme">KONTAKTIRAJTE NAS</a>
+         </section>
+    </section>
+
+    <section class="footer">
+        <h4>Dostupni smo na:</h4>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-instagram"></i>
+
+        </div>
+        <p>Made by NyCa</p>
+    </section>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function ShowMenu()
+    {
+        navLinks.style.right = "0";
+    }
+
+    function HideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+
+</body>
+</html>
